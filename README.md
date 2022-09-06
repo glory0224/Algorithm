@@ -1,8 +1,5 @@
 # Baekjoon study
 
-
-<h1>백준 알고리즘 공부 </h1>
-
 <br>
 
 <ul>
