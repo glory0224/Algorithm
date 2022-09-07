@@ -1,4 +1,7 @@
-# Baekjoon study
+# Baekjoon study 
+
+<img src="https://img.shields.io/badge/#5C2D91?style=flat-square&logo=Visual Studio
+&logoColor=black"/>
 
 <br>
 
