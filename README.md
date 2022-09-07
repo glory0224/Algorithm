@@ -1,4 +1,4 @@
-# Baekjoon study  <img src="https:/simpleicons.org/?q=study/Visual Studio-5C2D91?style=flat&logo=Visual Studio&logoColor=black"/>
+# Baekjoon study 
 
 
 <br>
