@@ -1,4 +1,4 @@
-
+# 백준 로또 6603번 
 # https://pacific-ocean.tistory.com/238 코드
 
 
