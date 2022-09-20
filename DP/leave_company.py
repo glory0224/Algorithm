@@ -1,6 +1,7 @@
 # 백준 14501번 퇴사 
 
 # https://pacific-ocean.tistory.com/199
+# dp 방식을 이용
 
 N = int(input())
 T = []
