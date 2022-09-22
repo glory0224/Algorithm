@@ -9,20 +9,27 @@ s = [list(map(int, input().split())) for _ in range(n)]
 
 def go(index, start, link) :
   if index == n :
+    
     if len(start) == n or len(link) == n :
       return -1
-    
+    print("index:" , index)
+    print(start)
+    print(link)
     team_start = 0
     team_link = 0
 
     for i in range(len(start)) :
+      print("start의 i : " + str(i))
       for j in range(i+1, len(start)) :
+        print("start의 j : " + str(j))
         # 인덱스가 서로 같은 경우는 0에 해당하기 때문에 패스한다.
         if i == j : continue
         team_start = team_start + s[start[i]][start[j]] + s[start[j]][start[i]]
     
     for i in range(len(link)) :
+      print("link의 i : " + str(i))
       for j in range(i+1, len(link)) :
+        print("link의 j : " + str(j))
         if i == j : continue
         team_link = team_link + s[link[i]][link[j]] + s[link[j]][link[i]]
 
@@ -32,14 +39,27 @@ def go(index, start, link) :
   if len(start) > n or len(link) > n : return -1
 
   ans = -1
-
+  
+  print(str(index) + "번째 team_start 재귀 함수 start 값: ", start)
+  print(str(index) + "번째 team_start 재귀 함수 link 값: ", link)
+  
 	# index의 사람을 start 팀에 넣었을 때
   team_start = go(index+1, start+[index], link)
+  print(str(index) + "번째 team_start 재귀 함수 종료 뒤 start 값: ", start)
+  print(str(index) + "번째 team_start 재귀 함수 종료 뒤 link 값: ", link)
+  
   if ans == -1 or (team_start != -1 and ans > team_start) :
     ans = team_start
   
+  print(str(index) + "번째 team_link 재귀 함수 start 값: ",start)
+  print(str(index) + "번째 team_link 재귀 함수 link 값: ",link)
 	# index의 사람을 link 팀에 넣었을 때
   team_link = go(index+1, start, link+[index])
+  
+  print(str(index) + "번째 team_link 재귀 함수 종료 뒤 start 값: ", start)
+  print(str(index) + "번째 team_link 재귀 함수 종료 뒤 link 값: ", link)
+  
+  
   if ans == -1 or (team_link != -1 and ans > team_link) :
     ans = team_link
 
@@ -49,31 +69,31 @@ print(go(0,[],[]))
 
 # 또 다른 풀이 
 
-n = int(input())
-stats = [list(map(int, input().split())) for i in range(n)]
-visited = [0] * n
-ans = 99999
+# n = int(input())
+# stats = [list(map(int, input().split())) for i in range(n)]
+# visited = [0] * n
+# ans = 99999
 
-def is_it():
-    global ans
-    start, link = 0, 0
-    for i in range(n):
-        for j in range(n):
-            if visited[i] and visited[j]:
-                start += stats[i][j]
-            elif not visited[i] and not visited[j]:
-                link += stats[i][j]
-    ans = min(ans, abs(start - link))
-    return
+# def is_it():
+#     global ans
+#     start, link = 0, 0
+#     for i in range(n):
+#         for j in range(n):
+#             if visited[i] and visited[j]:
+#                 start += stats[i][j]
+#             elif not visited[i] and not visited[j]:
+#                 link += stats[i][j]
+#     ans = min(ans, abs(start - link))
+#     return
 
-def resolve(iter):
-    if iter == n:
-        is_it()
-        return
-    visited[iter] = 1
-    resolve(iter + 1)
-    visited[iter] = 0
-    resolve(iter + 1)
-resolve(0)
+# def resolve(iter):
+#     if iter == n:
+#         is_it()
+#         return
+#     visited[iter] = 1
+#     resolve(iter + 1)
+#     visited[iter] = 0
+#     resolve(iter + 1)
+# resolve(0)
 
-print(ans)
+# print(ans)
