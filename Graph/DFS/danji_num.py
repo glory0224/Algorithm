@@ -1,4 +1,6 @@
-# # 백준 2667번 단지 번호 붙이기 
+# 백준 2667번 단지 번호 붙이기 
+# DFS 방식 
+
 import sys
 
 input = sys.stdin.readline
