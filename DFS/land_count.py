@@ -30,8 +30,8 @@ while True:
         break
     # 입력 받을 지도 저장 변수 
     landmap = []
-    # 결과를 담을 리스트를 선언
-    result = []
+#     # 결과를 담을 리스트를 선언
+#     result = []
     # 세어줄 개수
     count = 0
     # landmap에 입력값 높이만큼 반복문으로 추가 
