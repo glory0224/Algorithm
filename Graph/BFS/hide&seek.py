@@ -1,6 +1,8 @@
 # 백준 1697번 숨바꼭질 문제 
 
-# 수빈이가 동생을 찾을 수 있는 가장 빠른 시간이 몇 초 후인지 구하기 
+# 수빈이가 동생을 찾을 수 있는 가장 빠른 시간이 몇 초 후인지 구하기
+
+# https://wook-2124.tistory.com/273 참고
 
 import sys
 from collections import deque
