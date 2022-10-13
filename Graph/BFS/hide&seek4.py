@@ -15,7 +15,8 @@ def path(x):
     for _ in range(dist[x] + 1): # 최소 시간까지 for문을 돌면서 
         arr.append(temp) # 해당 위치를 넣는다.
         temp = move[temp] # temp 변수 초기화 
-    print(' '.join(map(str, arr[::-1]))) # 배열의 역순으로 출력
+    #print(' '.join(map(str, arr[::-1]))) # 배열의 역순으로 출력
+    print(*arr[::-1]) # 파이썬 문법을 이용해서 출력도 가능하다.
     # print(' '.join(arr[::-1])) -> error
 
 # bfs 메소드
