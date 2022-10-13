@@ -18,9 +18,9 @@ def bfs():
             print(dist[x]) # 거리 반환
             break
         # bfs 탐색가능한 범위를 nx로 뽑아준다.
-        for nx in (x - 1, x + 1, x *2):
-            if 0<= nx <= MAX and not dist[nx]:
-                dist[nx] = dist[x] + 1
+        for nx in (x - 1, x + 1, x *2): # nx = 4, 6, 10
+            if 0<= nx <= MAX and not dist[nx]: 
+                dist[nx] = dist[x] + 1 # dist[nx] = [4,6,10] -> 모두 1이 되면서 True 처리 
                 q.append(nx)    # q = deque([4, 6, "10"])    
 
 MAX = 10 ** 5 # 시간초과 방지로 값을 직접 제한한다.
