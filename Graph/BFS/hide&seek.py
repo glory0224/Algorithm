@@ -4,6 +4,8 @@
 
 # https://wook-2124.tistory.com/273 참고
 
+# 모든 가중치는 1초 = 1이다.
+
 import sys
 from collections import deque
 
