@@ -9,4 +9,5 @@
   <li> DFS </li>
   <li> BFS </li>
   <li> BackTracking </li>
+  <li> Tree </li>
 </ul>
