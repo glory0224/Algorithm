@@ -1,6 +1,6 @@
 # Baekjoon study 
 
-# Programming Language : python
+## Programming Language : python
 <br>
 
 <ul>
@@ -9,5 +9,5 @@
   <li> DFS </li>
   <li> BFS </li>
   <li> BackTracking </li>
-  <li> Tree </li>
+  <li> Graph </li>
 </ul>
