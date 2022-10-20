@@ -20,21 +20,24 @@ def bfs(start):
     visit = [-1] * (V + 1)
     que = deque()
     que.append(start)
-    visit[start] = 0
+    visit[start] = 0 # 시작 할 때만 값을 방문 처리 0으로 초기화 
     _max = [0, 0]
-
+    
     while que:
         t = que.popleft()
         for e, w in graph[t]:
             if visit[e] == -1:
                 visit[e] = visit[t] + w
+                # print("visit[" + str(e) + "]" + str(visit[e]))
                 que.append(e)
                 if _max[0] < visit[e]:
                     _max = visit[e], e
-
+                    # print(_max)
+    
     return _max
 
 
-dis, node = bfs(1)
-dis, node = bfs(node)
+dis, node = bfs(1) # 1번 인덱스부터 탐색, bfs로 한 정점에서 모든 정점을 탐색하여 가장 먼 거리를 구한다.
+# print(node)
+dis, node = bfs(node) # 가장 먼 거리의 노드부터 모든 정점을 다시 bfs 해주면 결과적으로 트리의 지름을 구할 수 있다. 
 print(dis)
