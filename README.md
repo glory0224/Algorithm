@@ -10,4 +10,5 @@
   <li> BFS </li>
   <li> BackTracking </li>
   <li> Graph </li>
+  <li> Greedy </li>
 </ul>
