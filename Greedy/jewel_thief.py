@@ -1,4 +1,5 @@
 # 백준 1202번 보석 도둑 문제 
+# https://velog.io/@piopiop/%EB%B0%B1%EC%A4%80-1202-%EB%B3%B4%EC%84%9D-%EB%8F%84%EB%91%91-Python
 
 '''
 아이디어 
