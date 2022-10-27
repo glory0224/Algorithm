@@ -27,7 +27,7 @@ rev_board = [k[:] for k in board]
 
 ans = n**2
 
- 
+# rev_board 배열로 만들고 행을 돌면서 전부 뒤집는다. 
 for i in range(n):
     for j in range(n):
         if rev_board[i][j] == 'T':
@@ -35,7 +35,7 @@ for i in range(n):
         else:
             rev_board[i][j] = 'T'
 
-# print("1<<n : " + str(1<<n))
+# print(rev_board)
 
 # 1에 해당하는 이진수 0001를 n만큼 왼쪽 시프트 -> 1000 -> 10진수 8 
 for b in range(1<<n):
@@ -43,20 +43,27 @@ for b in range(1<<n):
     for i in range(n):
         # print(" b : " + str(b))
         # print(" 1 << i : " + str(1 << i))
+        # 현재 행의 비트가 1이면 뒤집고 아니면 가만히 둔다.(비트 연산 필요)
         if b & (1 << i):
             tmp_board.append(rev_board[i][:])
         else:
             tmp_board.append(board[i][:])
             
     cnt = 0
+    print(tmp_board)
+    
+    # 열을 돌면서 T의 횟수를 구해준다.
     for i in range(n):
         tmp = 0
         for j in range(n):
+            # print("i : " +  str(i) + " j : "+ str(j) + " tmp_board : " + str(tmp_board[j][i]))
             if tmp_board[j][i] == 'T':
                 tmp += 1
         
+        # print(" tmp : " + str(tmp))
         cnt += min(tmp, n-tmp)
     ans = min(ans, cnt)
 
+# 최소값을 갱신한 뒤 출력한다. 
 print(ans)        
         
