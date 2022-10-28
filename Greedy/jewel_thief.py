@@ -41,6 +41,7 @@ tmp_jew = []
 
 for bag in bags:
     while jew and bag >= jew[0][0]:
+                                # -heapq : 최대힙 
         heapq.heappush(tmp_jew, -heapq.heappop(jew)[1])
     if tmp_jew:
         answer -= heapq.heappop(tmp_jew)
