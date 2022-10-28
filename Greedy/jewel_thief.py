@@ -1,6 +1,9 @@
 # 백준 1202번 보석 도둑 문제 
 # https://velog.io/@piopiop/%EB%B0%B1%EC%A4%80-1202-%EB%B3%B4%EC%84%9D-%EB%8F%84%EB%91%91-Python
 
+# 힙 정렬 포스팅 글 링크 - 힙정렬 개념 공부 할 때 참고
+# https://www.daleseo.com/python-heapq/
+
 '''
 아이디어 
 1. 각각의 가방에 들어갈 수 있는 가장 가격이 높은 보석을 조사
@@ -33,7 +36,7 @@ for _ in range(N):
 bags = []
 for _ in range(K):
      bags.append(int(sys.stdin.readline()))
-
+# 무게 순서대로 정렬 
 bags.sort()
 
 answer = 0
@@ -41,10 +44,13 @@ tmp_jew = []
 
 for bag in bags:
     while jew and bag >= jew[0][0]:
-                                # -heapq : 최대힙 
         heapq.heappush(tmp_jew, -heapq.heappop(jew)[1])
+        #print(tmp_jew)
+        
     if tmp_jew:
+        # print("if문 " + str(tmp_jew))
         answer -= heapq.heappop(tmp_jew)
+        # print(tmp_jew)
     elif not jew:
         break
 
