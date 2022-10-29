@@ -18,7 +18,9 @@ for i in range(n):
 
 # 일자별로 오름차순해서 일정을 순차적으로 갈 때 어느 대학이 제일 돈을 많이주는지 비교한다. 
 # 따라서 lst배열의 1번 인덱스를 기준으로 오름차순 정렬 
-lst.sort(key=lambda x: (x[1]))
+
+lst.sort(key=lambda x: (x[1])) # https://gorokke.tistory.com/38 람다 표현식 정리 링크
+
 
 p_list=[]
 for i in lst:
