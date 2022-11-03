@@ -11,4 +11,5 @@
   <li> BackTracking </li>
   <li> Graph </li>
   <li> Greedy </li>
+  <li> Divide&Conquer </li>
 </ul>
