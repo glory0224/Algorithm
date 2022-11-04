@@ -1,6 +1,7 @@
 # 백준 12919번 A와 B 2
 # 그리디 알고리즘
 # DFS 알고리즘 
+# https://bio-info.tistory.com/161
 
 # A와 B 문제의 핵심과 유사 
 
