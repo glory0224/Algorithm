@@ -40,15 +40,15 @@ def solve(n, k):
                 break
             
             s[n - 1 - (acnt + 1)] = 'A'
-            print(s)
+            # print(s)
             lidx = n - 1 - (acnt + 1)
             acnt += 1
             curk += 1
         else: # A를 앞으로 미는 경우 
             s[lidx] = 'B'
-            print(s)
+            # print(s)
             s[lidx - 1] = 'A'
-            print(s)
+            # print(s)
             lidx -= 1
             curk += 1
             
