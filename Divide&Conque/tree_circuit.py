@@ -1,3 +1,5 @@
+# 백준 2263번 트리의 순회 문제 
+# https://velog.io/@bae_mung/Python-BOJ-2263-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%88%9C%ED%9A%8C
 import sys
 sys.setrecursionlimit(10**9)
 input = sys.stdin.readline
