@@ -20,8 +20,10 @@
 N, r, c = map(int, input().split())
 cnt = 0
 
+# 문제 제시된 조건으로 while문 구성 
+
 while N > 1:
-    size = (2 ** N) // 2
+    size = (2 ** N) // 2 # 분할 정복 
     if r < size and c < size: # 2사분면
         pass
     elif r < size and c >= size: # 1사분면
