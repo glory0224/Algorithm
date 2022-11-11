@@ -1,4 +1,5 @@
-# 백준 1891번 사분면 문제 
+# 백준 1891번 사분면 문제
+# https://velog.io/@letgodchan0/%EB%B0%B1%EC%A4%80-1891%EB%B2%88-%EC%82%AC%EB%B6%84%EB%A9%B4 
 
 """
 아이디어 
