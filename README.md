@@ -12,4 +12,5 @@
   <li> Graph </li>
   <li> Greedy </li>
   <li> Divide&Conquer </li>
+  <li> Sort </li>
 </ul>
