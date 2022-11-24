@@ -13,4 +13,5 @@
   <li> Greedy </li>
   <li> Divide&Conquer </li>
   <li> Sort </li>
+  <li> BinarySearch </li>
 </ul>
