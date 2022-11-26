@@ -1,6 +1,7 @@
 # 백준 2805번 나무 자르기
 # https://claude-u.tistory.com/446 
 # pypy3 문제 제출
+# 이분 탐색
 
 import sys
 
