@@ -26,7 +26,7 @@ if __name__ == "__main__":
         print(n)
     else:
         # 이분 탐색
-        left, right = 0, 60000000000
+        left, right = 0, 60000000000 # 60000000000수보다 작을 경우 백준에서 type error를 발생시킨다. 왜일까?
         t = None
         while left <= right:
             # print("left : " + str(left))
