@@ -1,4 +1,4 @@
-# Baekjoon study 
+# Algorithm Study 
 
 ## Programming Language : python
 <br>
